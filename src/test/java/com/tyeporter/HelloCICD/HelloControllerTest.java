@@ -45,6 +45,11 @@ public class HelloControllerTest {
         String expected = "Hello, Tye!";
         assertEquals(expected, response.getBody());
     }
+
+    @Test
+    public void failingTest() {
+    	fail("Creating a failing test on purpose");
+    }
     
     // =========================================================
     // HELPER METHODS
